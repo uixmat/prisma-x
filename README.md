@@ -7,15 +7,20 @@ Welcome to my take on the Prisma Challenge. Here you'll find a simple CRUD appli
 🚀 You can view a live demo of the application [here](https://prisma-x.vercel.app/).
 ## Setup
 
-Nothing special here, just install the dependencies and start the development server.
+Nothing special here, just install the dependencies, rename the `.env.example` file to `.env` and start the development server.
 
 ```bash
 # Install dependencies
 pnpm install
 
-# Start the development server
+# Rename .env.example to .env
+mv .env.example .env
+
+# Run dev
 pnpm dev
 ```
+
+
 ## The repo
 
 Okay, so let's talk about the repo, the decisions I made and a little bit about my process and the code.
