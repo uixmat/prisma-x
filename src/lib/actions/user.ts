@@ -94,8 +94,6 @@ export async function toggleUserStatus(userId: string, path: string) {
     const newStatus = user?.status === "ACTIVE" ? "INACTIVE" : "ACTIVE";
     await updateUserStatus(userId, newStatus);
     revalidatePath(path);
-    revalidatePath('/');
-    revalidatePath('/users');
     return true;
   } catch (error) {
     console.error("Error toggling user status:", error);
