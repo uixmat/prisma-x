@@ -4,7 +4,7 @@ export default function UsersLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="container mx-auto py-8 flex flex-1 justify-center items-center">
+    <div className="container mx-auto mt-[69px] py-8 flex flex-1 justify-center items-start">
       {children}
     </div>
   );
