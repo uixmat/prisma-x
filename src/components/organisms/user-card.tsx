@@ -39,7 +39,7 @@ export const UserCard = ({ user }: { user: User }) => {
 
   return (
     <Card key={user.id} className="overflow-clip relative">
-      <CardHeader className="flex-row items-center justify-between relative z-10 pb-2">
+      <CardHeader className="flex-row items-center justify-between relative z-[5] pb-2">
         <Badge variant="secondary" className="gap-1">
           <span
             className={`w-2 h-2 rounded-full animate-pulse ${
