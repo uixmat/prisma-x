@@ -7,7 +7,9 @@ Welcome to my take on the Prisma Challenge. Here you'll find a simple CRUD appli
 🚀 You can view a live demo of the application [here](https://prisma-x.vercel.app/).
 ## Setup
 
-Nothing special here, just install the dependencies, rename the `.env.example` file to `.env` and start the development server.
+Nothing special here, just install the dependencies, rename the `.env.example` file to `.env`, add your Prisma Postgres db and run dev.
+
+> **Note:** [Get started with Prisma Postgres](https://www.prisma.io/postgres) 
 
 ```bash
 # Install dependencies
