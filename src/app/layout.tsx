@@ -46,8 +46,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div className="flex flex-col container mx-auto p-8 pt-[69px] min-h-screen">
+          <div className="flex flex-col container mx-auto px-8 min-h-dvh">
+            <Header />
             {children}
             <Footer />
           </div>
