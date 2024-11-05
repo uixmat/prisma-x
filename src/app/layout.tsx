@@ -12,6 +12,17 @@ import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/organisms/header";
 import { Footer } from "@/components/organisms/footer";
 
+// Viewport
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "black",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

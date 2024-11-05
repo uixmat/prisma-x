@@ -104,7 +104,14 @@ export function UserForm({ user, onSuccess }: UserFormProps) {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input type="email" {...field} placeholder="john@doe.com" />
+                <Input
+                  type="email"
+                  {...field}
+                  placeholder="john@doe.com"
+                  autoFocus
+                  autoComplete="off"
+                  autoCorrect="off"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -118,7 +125,12 @@ export function UserForm({ user, onSuccess }: UserFormProps) {
             <FormItem>
               <FormLabel>First Name</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="John" />
+                <Input
+                  {...field}
+                  placeholder="John"
+                  autoComplete="off"
+                  autoCorrect="off"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -132,7 +144,12 @@ export function UserForm({ user, onSuccess }: UserFormProps) {
             <FormItem>
               <FormLabel>Last Name</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Doe" />
+                <Input
+                  {...field}
+                  placeholder="Doe"
+                  autoComplete="off"
+                  autoCorrect="off"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -146,7 +163,12 @@ export function UserForm({ user, onSuccess }: UserFormProps) {
             <FormItem>
               <FormLabel>Github username</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="eg. prisma" />
+                <Input
+                  {...field}
+                  placeholder="eg. prisma"
+                  autoComplete="off"
+                  autoCorrect="off"
+                />
               </FormControl>
               <FormDescription>
                 We&apos;ll use their Github avatar!
@@ -156,7 +178,12 @@ export function UserForm({ user, onSuccess }: UserFormProps) {
           )}
         />
 
-        <Button type="submit" size="lg" disabled={isSubmitting}>
+        <Button
+          type="submit"
+          size="lg"
+          disabled={isSubmitting}
+          className="w-full md:w-min"
+        >
           {isSubmitting && <Loader className="mr-2 h-4 w-4 animate-spin" />}
           {user ? "Update" : "Create"} User
         </Button>

@@ -38,7 +38,7 @@ export default async function UsersPage() {
   ).length;
 
   return (
-    <div className="flex flex-col space-y-4 pt-8">
+    <div className="w-full flex flex-col space-y-4 pt-8">
       <div className="flex items-center space-x-2">
         <Users size={24} />
         <h1 className="text-2xl font-bold">Users</h1>
