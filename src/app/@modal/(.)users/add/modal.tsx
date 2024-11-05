@@ -81,17 +81,15 @@ export default function Modal() {
         }, 150);
       }}
       modal
-      preventScrollRestoration={false}
+      preventScrollRestoration={true}
       direction="bottom"
     >
-      <DrawerContent ref={formContainerRef} className="min-h-[90vh]">
-        <DrawerHeader className="text-left">
+      <DrawerContent ref={formContainerRef}>
+        <DrawerHeader className="text-left min-h-12">
           <DrawerTitle>Add user</DrawerTitle>
         </DrawerHeader>
 
-        <div className="p-4">
-          <UserForm onSuccess={handleSuccess} />
-        </div>
+        <UserForm onSuccess={handleSuccess} />
       </DrawerContent>
     </Drawer>
   );

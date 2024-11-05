@@ -92,14 +92,12 @@ export default function Modal({ user }: ModalProps) {
       preventScrollRestoration={false}
       direction="bottom"
     >
-      <DrawerContent ref={formContainerRef} className="min-h-[90vh]">
+      <DrawerContent ref={formContainerRef}>
         <DrawerHeader className="text-left">
           <DrawerTitle>Edit user</DrawerTitle>
         </DrawerHeader>
 
-        <div className="p-4">
-          <UserForm user={user} onSuccess={handleSuccess} />
-        </div>
+        <UserForm user={user} onSuccess={handleSuccess} />
       </DrawerContent>
     </Drawer>
   );

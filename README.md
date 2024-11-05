@@ -70,6 +70,10 @@ Shadcn UI uses [Zod](https://zod.dev/) for form validation and Prisma generates 
   - Tweaked a couple of styles i wasn't happy with.
   - Composed the README for submission.
 
+- `Tuesday 5th November`
+  - Fixed some mobile sizings (sorry it was really bugging me)
+  - Added drawer instead of modal for mobile but i'm not 100% happy with how the drawer and viewport interact when input is focussed.
+  
 --- 
 
 # Thank you 🫶🏼
